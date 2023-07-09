@@ -7,13 +7,13 @@ let contagem = 0
 
 //criando conteúdo header
 const textoHea = document.createElement("h1")
-textoHea.innerText = "Página para prática de DOM e objetos"
+textoHea.innerText = "To-do List"
 headerEle.appendChild(textoHea)
 
 
 //criando botao
 const botao = document.createElement("button")
-botao.innerText = "Nova tabela"
+botao.innerText = "Novo Post-it"
 botao.addEventListener("click", criarTabela)
 inserBotao.appendChild(botao)
 
@@ -28,7 +28,7 @@ function criarTabela(){
         if ( contagem < 8 ){
             const novaTabela = document.createElement("div")
             novaTabela.innerHTML = `<h1>${textoh.value}</h1>`
-            novaTabela.innerHTML += `<p>Tabela adicionada, clique novamente para criar outra</p>`
+            novaTabela.innerHTML += `<p>Post-it adicionado, clique novamente para criar outra</p>`
             insercaoBlock.appendChild(novaTabela)
             contagem ++
             console.log(textoh)
