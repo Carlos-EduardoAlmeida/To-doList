@@ -28,7 +28,7 @@ function criarTabela(){
         if ( contagem < 8 ){
             const novaTabela = document.createElement("div")
             novaTabela.innerHTML = `<h1>${textoh.value}</h1>`
-            novaTabela.innerHTML += `<p>Post-it adicionado, clique novamente para criar outra</p>`
+            novaTabela.innerHTML += `<p>Post-it adicionado, clique novamente para criar outro</p>`
             insercaoBlock.appendChild(novaTabela)
             contagem ++
             console.log(textoh)
