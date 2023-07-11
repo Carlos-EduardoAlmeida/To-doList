@@ -45,7 +45,13 @@ div{
     float: left;
     margin: 20px 20px;
     border-radius: 10px;
-    
+}
+
+div h1{
+    max-width: 25ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 footer, footer a{
